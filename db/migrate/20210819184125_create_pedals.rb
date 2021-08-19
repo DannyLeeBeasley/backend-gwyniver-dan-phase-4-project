@@ -8,8 +8,8 @@ class CreatePedals < ActiveRecord::Migration[6.1]
       t.integer :number_of_inputs
       t.integer :number_of_outputs
       t.string :image
-      t.belongs_to :User, null: false, foreign_key: true
-      t.belongs_to :PedalBoard, null: false, foreign_key: true
+      t.belongs_to :user, null: false, foreign_key: true
+      t.belongs_to :pedal_board, null: false, foreign_key: true
 
       t.timestamps
     end

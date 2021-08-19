@@ -1,4 +1,4 @@
 class Pedal < ApplicationRecord
-  belongs_to :User
-  belongs_to :PedalBoard
+  belongs_to :user
+  belongs_to :pedal_board
 end
